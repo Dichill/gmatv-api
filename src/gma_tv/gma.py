@@ -1,6 +1,7 @@
 # GMA Network | Script by @Dichill
 
 import requests
+import importlib
 import os
 
 """
@@ -116,9 +117,13 @@ class GMATV:
         return f.read()
 
     def parseTVShow(self):
-        from lib.parse_shows import parseShows
+        parseShow = importlib.import_module('parse_shows')
+        parseShows = parseShow.parseShows()
+
         return parseShows()
 
     def getTVShow(self, shows):
-        from lib.get_shows import getShows
-        return getShows(shows)
+        getTVShow = importlib.import_module('parse_shows')
+        getTVShows = getTVShow.getShows(shows)
+
+        return getTVShows()

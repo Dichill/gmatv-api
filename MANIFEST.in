@@ -1,0 +1,4 @@
+include src/gma_tv/data/*.dr
+include src/gma_tv/data/logs/*.dr
+include src/gma_tv/data/json/*.json
+include src/gma_tv/*.bat

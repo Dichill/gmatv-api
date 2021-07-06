@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+    "setuptools",
+    "tqdm",
+    "asyncio",
+    "aiohttp",
+    "requests"
+]
+
+build-backend = "setuptools.build_meta:__legacy__"
